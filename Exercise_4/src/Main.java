@@ -17,9 +17,9 @@ public class Main {
             }
 
         }catch (InputMismatchException e){
-            System.err.println("Error: El numero ingresado no debe ser decimal");
+            System.err.println("Error: Valor ingresado no valido");
         }catch (NumberFormatException e) {
-            System.err.println("Error: El valor ingresado no es un numero");
+            System.err.println("Error: No se puede transformar a un entero");
         }catch (ArithmeticException e){
             System.err.println("ERROR: No se puede dividir por 0");
         }
@@ -36,6 +36,7 @@ public class Main {
         n1 = Integer.parseInt(input.next());
         System.out.print("\nSegundo numero: ");
         n2 = Integer.parseInt(input.next());
+        
         System.out.println("Resultado: " + (n1/n2));
 
     }
